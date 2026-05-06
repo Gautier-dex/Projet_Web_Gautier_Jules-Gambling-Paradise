@@ -1,0 +1,64 @@
+table {
+    border-collapse: collapse; /* permet de fusionner les bordures voisines*/
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+
+
+th, td {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border: 1px solid #ccc;
+    font-weight: normal;
+}
+
+
+th {
+    background-color: #d8d8ca;
+    font-weight: bold;
+}
+
+
+.bank-header {
+    background-color: #d8d8ca;
+    font-weight: bold;
+}
+
+
+.rotated-text { /* pour la colonne verticale "votre main" */
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    background-color: #d8d8ca;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+
+.hit-blue {
+    background-color: #38b6ff; /* Hit */
+    color: black;
+}
+.stay-red {
+    background-color: #ff5757; /* Stay */
+    color: black;
+}
+.double-yellow {
+    background-color: #ffbd59; /* Doubler */
+    color: black;
+}
+.split-green {
+    background-color: #7ed957; /* Split */
+    color: black;
+}
+
+/* Style pour le texte spécifique dans la colonne de gauche */
+.left-col-text {
+    background-color: #d8d8ca;
+    text-align: right;
+    padding-right: 5px;
+    white-space: nowrap; /* Empêche le retour à la ligne */
+}
