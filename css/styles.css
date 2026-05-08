@@ -39,6 +39,11 @@ header nav a:hover{
 page blackjack*/
 
 
+header {
+    background-color: #374052;
+}
+
+
 table {
     border-collapse: collapse; /* permet de fusionner les bordures voisines*/
     font-family: Arial, sans-serif;
