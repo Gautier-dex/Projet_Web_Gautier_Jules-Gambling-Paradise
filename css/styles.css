@@ -42,7 +42,7 @@ page blackjack*/
 table {
     border-collapse: collapse; /* permet de fusionner les bordures voisines*/
     font-family: Arial, sans-serif;
-    margin: 20px auto;
+    margin: auto;
     border: 2px solid #ccc;
     text-align: center;
 }
@@ -103,6 +103,22 @@ th {
     padding-right: 5px;
     white-space: nowrap; /* Empêche le retour à la ligne */
 }
+
+.tables {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+
+.table_legend {
+    margin-top: 35%;
+    margin-left: 10%;
+}
+
+
+
 
 /*=============================================================
 =============================================================

@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Blackjack</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 <body>
+<header>
+    <h1>Gambling Paradise</h1>
+    <nav>
+        <a href="Accueil.html">Accueil</a>
+        <a href="Blackjack.html">Blackjack</a>
+        <a href="Poker.html">Poker</a>
+        <a href="Rejoindre.html">Nous rejoindre</a>
+    </nav>
+</header>
 
     <section>
         <h1>BlackJack</h1>
@@ -22,14 +31,14 @@
     <section>
         <h2>Règles du BlackJack</h2>
         <p>
-            La partie oppose individuellement chaque joueur à la banque. Le but est de battre le croupier sans dépasser le score de 21. Dès qu'un joueur fait plus que 21, on dit qu'il « brûle » et il perd sa mise initiale. Les valeurs des cartes sont les suivantes :
+            La partie oppose individuellement chaque joueur à la banque. Le but est de battre le croupier sans dépasser le score de 21. Dès qu'un joueur fait plus de 21, on dit qu'il « brûle » et il perd sa mise initiale. Les valeurs des cartes sont les suivantes :
         </p>
         <ul>
             <li>de 2 à 9 : valeur nominale de la carte ;</li>
             <li>de 10 au roi (surnommées « bûche ») : 10 points ;</li>
             <li>as : 1 ou 11 points (au choix du joueur).</li>
         </ul>
-        <p>Source :<a href="https://fr.wikipedia.org/wiki/Blackjack_%28jeu%29">Wikipedia</a></p>
+        <p>Source : <a href="https://fr.wikipedia.org/wiki/Blackjack_%28jeu%29">Wikipedia</a></p>
     </section>
 
     <section>
@@ -37,11 +46,15 @@
         <ul>
             <li>
                 <h3>Doubler (english : Double)</h3>
-                <p> Le "doubler" (ou double down) est une option qui s'offre à vous une fois vos deux premières cartes distribuées. Elle consiste à doubler votre mise initiale en échange d'une seule et unique carte supplémentaire. Attention toutefois : en choisissant cette option, vous vous engagez à ne plus tirer aucune autre carte par la suite. Dans certains casinos, vous pouvez demander à recevoir cette carte face cachée pour accentuer le suspense.</p>
+                <p>Le fait de "doubler" (ou double down) est une option qui s'offre à vous une fois vos deux premières cartes distribuées. Elle consiste à doubler votre mise initiale en échange d'une seule et unique carte supplémentaire. Attention toutefois : en choisissant cette option, vous vous engagez à ne plus tirer aucune autre carte par la suite. Dans certains casinos, vous pouvez demander à recevoir cette carte face cachée pour accentuer le suspense.</p>
             </li>
             <li>
                 <h3>Séparer (english : Split)</h3>
-                <p>Le "split" (ou séparer) est une option possible lorsque vos deux premières cartes sont de même valeur. Vous divisez alors votre main en deux jeux distincts, ce qui nécessite de doubler votre mise initiale pour couvrir chaque main. Le croupier distribue ensuite une nouvelle carte pour compléter chaque paire. Selon les règles de la table, vous conservez souvent la possibilité de re-doubler ou de re-séparer par la suite. Notez que la plupart des casinos limitent le nombre de séparations autorisées à quatre mains maximum. </p>
+                <p>Le "split" (ou séparer) est une option possible lorsque vos deux premières cartes sont de même valeur. Vous divisez alors votre main en deux jeux distincts, ce qui nécessite de doubler votre mise initiale pour couvrir chaque main. Le croupier distribue ensuite une nouvelle carte pour compléter chaque paire. Selon les règles de la table, vous conservez souvent la possibilité de redoubler ou de reséparer par la suite. Notez que la plupart des casinos limitent le nombre de séparations autorisées à quatre mains maximum.</p>
+            </li>
+            <li>
+                <h3>Petit conseil:</h3>
+                <p>Nous vous conseillons de ne jamais miser plus de la moitié de votre argent sur une main, car sinon vous ne pourriez plus split (séparer) ou double (doubler), ce qui peut vous désavantager énormément.</p>
             </li>
         </ul>
     </section>
@@ -49,422 +62,476 @@
     <section>
         <h2>Notre Stratégie pour te faire gagner</h2>
 
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="2" class="bank-header"></th> <!-- colspan permet de dire que la cellule s'étend sur 1 cellule de plus sur la droite -->
-                    <th colspan="10" class="bank-header">Main de la banque</th>
-                </tr>
+        <p>En suivant notre stratégie parfaitement à la lettre, nous estimons que vous allez gagner environ 49,5 % de vos mains, contre 46 à 48 % si vous ne suivez pas ces conseils.</p>
+        <p>Le tableau ci-dessous vous indique, pour chaque main que vous avez en fonction de la carte du croupier, ce que vous devez faire. Il est crucial pour vous de suivre ce tableau même si cela peut vous sembler tentant de tirer (hit) ou de doubler sur certaines mains qui ne sont pas indiquées sur le tableau.</p>
 
-                <tr>
-                    <th colspan="2" class="bank-header"></th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                    <th>7</th>
-                    <th>8</th>
-                    <th>9</th>
-                    <th>T</th>
-                    <th>A</th>
-                </tr>
-            </thead>
+            <div class = "tables">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="bank-header"></th> <!-- colspan permet de dire que la cellule s'étend sur 1 cellule de plus sur la droite -->
+                            <th colspan="10" class="bank-header">Main de la banque</th>
+                        </tr>
 
-            <tbody>
-                <tr>
-                    <td rowspan="28" class="rotated-text">Votre Main</td> <!-- rowspan permet que la ligne s'étende sur 27 lignes en dessous d'elle -->
-                    <td class="left-col-text">8 ou moins</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">9</td>
-                    <td class="hit-blue">H</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">10</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">11</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="hit-blue">H</td>
-                </tr>
+                        <tr>
+                            <th colspan="2" class="bank-header"></th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>T</th>
+                            <th>A</th>
+                        </tr>
+                    </thead>
 
-                <tr>
-                    <td class="left-col-text">12</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">13</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">14</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">15</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">16</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">17</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">18 ou +</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                </tr>
-                <!-- Mains Soft -->
-                <tr>
-                    <td class="left-col-text">A2</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">A3</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">A4</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">A5</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">A6</td>
-                    <td class="hit-blue">H</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">A7</td>
-                    <td class="stay-red">S</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">A8-A9</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                </tr>
+                    <tbody>
+                        <tr>
+                            <td rowspan="28" class="rotated-text">Votre Main</td> <!-- rowspan permet que la ligne s'étende sur 27 lignes en dessous d'elle -->
+                            <td class="left-col-text">8 ou moins</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">9</td>
+                            <td class="hit-blue">H</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">10</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">11</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
 
-                <tr>
-                    <td class="left-col-text">2-2</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">3-3</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">4-4</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">5-5</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="double-yellow">D</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">6-6</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">7-7</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                    <td class="hit-blue">H</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">8-8</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">9-9</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="stay-red">S</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">T-T</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                    <td class="stay-red">S</td>
-                </tr>
-                <tr>
-                    <td class="left-col-text">A-A</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                    <td class="split-green">SP</td>
-                </tr>
-            </tbody>
+                        <tr>
+                            <td class="left-col-text">12</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">13</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">14</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">15</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">16</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">17</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">18 ou +</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                        </tr>
+                        <!-- Mains Soft -->
+                        <tr>
+                            <td class="left-col-text">A2</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">A3</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">A4</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">A5</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">A6</td>
+                            <td class="hit-blue">H</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">A7</td>
+                            <td class="stay-red">S</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">A8-A9</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                        </tr>
 
-            <tfoot>
+                        <tr>
+                            <td class="left-col-text">2-2</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">3-3</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">4-4</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">5-5</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="double-yellow">D</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">6-6</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">7-7</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                            <td class="hit-blue">H</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">8-8</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">9-9</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="stay-red">S</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">T-T</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                            <td class="stay-red">S</td>
+                        </tr>
+                        <tr>
+                            <td class="left-col-text">A-A</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                            <td class="split-green">SP</td>
+                        </tr>
+                    </tbody>
 
-            <tr>
-                <th colspan="2" class="bank-header"></th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-                <th>6</th>
-                <th>7</th>
-                <th>8</th>
-                <th>9</th>
-                <th>T</th>
-                <th>A</th>
-            </tr>
+                    <tfoot>
 
-            <tr>
-                <th colspan="2" class="bank-header"></th>
-                <th colspan="10" class="bank-header">Main de la banque</th>
-            </tr>
-            </tfoot>
-        </table>
+                    <tr>
+                        <th colspan="2" class="bank-header"></th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>9</th>
+                        <th>T</th>
+                        <th>A</th>
+                    </tr>
 
+                    <tr>
+                        <th colspan="2" class="bank-header"></th>
+                        <th colspan="10" class="bank-header">Main de la banque</th>
+                    </tr>
+                    </tfoot>
+                </table>
+
+            <aside class = "table_legend">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Légendes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "hit-blue">
+                            <td>H</td>
+                            <td>Hit</td>
+                        </tr>
+                        <tr class = "stay-red">
+                            <td>S</td>
+                            <td>Stay</td>
+                        </tr>
+                        <tr class = "double-yellow">
+                            <td>D</td>
+                            <td>Double</td>
+                        </tr>
+                        <tr class = "split-green">
+                            <td>SP</td>
+                            <td>Split</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+        </div>
+    </section>
+
+
+    <section class = "card_compt">
+        <h2>Le Comptage de Cartes (High-Low)</h2>
+        <p>Une fois que tu maîtrises la stratégie de base, le comptage de cartes est la technique qui permet de faire basculer l'avantage mathématique du côté du joueur. La méthode la plus célèbre est le système High-Low.</p>
+        <h3>Le principe</h3>
+        <p>Le but n'est pas de mémoriser chaque carte, mais d'attribuer une valeur à chaque carte qui sort du sabot pour déterminer si les cartes restantes sont à votre avantage (beaucoup de "bûches" et d'As) ou à votre désavantage (beaucoup de petites cartes).</p>
+        <h3>Les valeurs de comptage</h3>
+        <ul>
+            <li>2, 3, 4, 5, 6 : +1 (ces cartes sont mauvaises pour le joueur, quand elles sortent, le sabot devient "meilleur").</li>
+            <li>7, 8, 9 : 0 (cartes neutres).</li>
+            <li>10, Valet, Dame, Roi, As : -1 (ces cartes sont excellentes pour le joueur, quand elles sortent, l'avantage diminue).</li>
+        </ul>
+        <h3>Comment l'utiliser ?</h3>
+        <ol>
+            <li>Le Compte Courant (Running Count) : Commencez à 0 au début du sabot. Additionnez ou soustrayez la valeur de chaque carte distribuée sur la table.</li>
+            <li>Le Vrai Compte (True Count) : Pour être précis, divisez votre score par le nombre de paquets de cartes restants dans le sabot.</li>
+            <li>L'action : Plus le score est élevé (positif), plus vous devez augmenter votre mise. Si le score est négatif, restez sur la mise minimale.</li>
+        </ol>
+        <p>Attention : Bien que légal, le comptage de cartes est très mal vu par les casinos. Si le croupier remarque que vous variez vos mises exactement selon le compte, vous risquez d'être invité à changer de table ou même interdit de blackjack à vie dans le casino!</p>
     </section>
 
 
