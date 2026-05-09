@@ -4,6 +4,11 @@
     color: #e6edf3;
 }
 
+body {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 header{
     display : flex;
     gap: 38%;
@@ -28,7 +33,8 @@ header nav a{
 }
 
 header nav a:hover{
-    background-color: darkblue;
+    color : white;
+    text-shadow: 0 0 10px rgba(211, 47, 47, 0.7);
 
 }
 
@@ -50,17 +56,35 @@ h2 {
 
 }
 
+section {
+    margin-bottom: 50px;
+}
+
+p, ul {
+    font-size: 20px;
+}
+
 /*=============================================================
 =============================================================
 =============================================================
 
 page blackjack*/
-.image_blackjack_illustration {
-    display: block; /* L'image se comporte comme un bloc */
-    margin-left: auto; /* Pousse l'image au maximum vers la droite */
-    margin-right: 0;
+
+.image_left_and_text_right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
 }
 
+.image_blackjack_illustration {
+    border: 3px solid #2a3137;
+    border-radius: 12px;
+}
+
+.blackjack_description_right {
+    flex: 1; /* permet de prendre toute la place pour que l'image soit toute à gauche*/
+}
 
 table {
     border-collapse: collapse; /* permet de fusionner les bordures voisines*/
@@ -68,6 +92,7 @@ table {
     margin: auto;
     border: 2px solid #ccc;
     text-align: center;
+    margin-top : 40px;
 }
 
 
