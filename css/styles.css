@@ -1,7 +1,14 @@
 /*global*/
-*{
-    background-color: lightblue;
+* {
+    background-color: #0d1117;
+    color: #e6edf3;
 }
+
+body {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 header{
     display : flex;
     gap: 38%;
@@ -26,11 +33,36 @@ header nav a{
 }
 
 header nav a:hover{
-    background-color: darkblue;
+    color : white;
+    text-shadow: 0 0 10px rgba(211, 47, 47, 0.7);
 
 }
 
+section h1 {
+    font-family: arial, sans-serif;
+    color: #D32F2F;
+    text-align: center;
+    font-size: 65px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(211, 47, 47, 0.7); /* Aide de l'IA pour pour avoir un effet néon (découverte de text-shadow) */
+    border-bottom: 2px solid #D4AF37;
+}
 
+h2 {
+    font-family: arial, sans-serif;
+    color: gold;
+    text-shadow: 0 0 20px rgba(211, 47, 47, 0.7);
+
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+p, ul {
+    font-size: 20px;
+}
 
 /*=============================================================
 =============================================================
@@ -38,6 +70,21 @@ header nav a:hover{
 
 page blackjack*/
 
+.image_left_and_text_right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.image_blackjack_illustration {
+    border: 3px solid #2a3137;
+    border-radius: 12px;
+}
+
+.blackjack_description_right {
+    flex: 1; /* permet de prendre toute la place pour que l'image soit toute à gauche*/
+}
 
 table {
     border-collapse: collapse; /* permet de fusionner les bordures voisines*/
@@ -45,6 +92,7 @@ table {
     margin: auto;
     border: 2px solid #ccc;
     text-align: center;
+    margin-top : 40px;
 }
 
 
@@ -54,6 +102,7 @@ th, td {
     padding: 0;
     border: 1px solid #ccc;
     font-weight: normal;
+    color : black;
 }
 
 
