@@ -11,22 +11,25 @@ body {
 
 header{
     display : flex;
-    gap: 38%;
+    gap: 460px;
     align-items: center;
+
 }
 
 header nav{
     display: flex;
-    gap: 10%;
+    gap: 50px;
     font-size:150%;
+
 }
 header nav a{
     color :red;
     white-space: nowrap;
-    background-color:yellow;
+    background-color: #D4AF37;
     border-radius: 15px;
     border: 1px solid white;
     padding: 10px;
+    text-decoration: none;
 }
 
 header nav a:hover{
@@ -61,6 +64,23 @@ p, ul {
     font-size: 20px;
 }
 
+footer {
+    border-top: 2px solid #D4AF37;
+    padding-top: 20px;
+    text-align: center;
+    font-size:150%;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color :red;
+    white-space: nowrap;
+    background-color: #D4AF37;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 10px;
+    text-decoration: none;
+}
 /*=============================================================
 =============================================================
 =============================================================
@@ -71,6 +91,59 @@ Acceuil*/
     font-size: 100px;
 }
 
+.acceuil_saut_de_ligne {
+    margin-bottom: 20px;
+}
+
+.acceuil_text {
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: center;
+}
+
+.image_jules {
+    border: 3px solid darkgoldenrod;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(205, 26, 26, 0.97); /* adaptation de text-shadow mais pour une bordure*/
+}
+
+.image_gautier{
+    border: 3px solid darkred;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(228, 156, 10, 0.84);
+}
+
+.jules_name {
+    margin-left:  250px;
+    margin-right: 250px;
+    font-size: 50px;
+    border: 3px solid darkred;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(228, 156, 10, 0.84);
+}
+
+.gautier_name {
+    margin-left:  250px;
+    margin-right: 250px;
+    font-size: 50px;
+    border: 3px solid darkgoldenrod;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(205, 26, 26, 0.97);
+}
+
+.photos_and_names {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.h2_link {
+    color: gold;
+    text-shadow: 0 0 20px rgba(211, 47, 47, 0.7);
+    text-decoration: none;
+    background-color: transparent;
+}
 
 /*=============================================================
 =============================================================
@@ -82,15 +155,16 @@ page blackjack*/
     display: flex;
     align-items: center;
     gap: 40px;
-
 }
 
-.image_blackjack_illustration {
+.image_left {
     border: 3px solid #2a3137;
     border-radius: 12px;
 }
 
-.blackjack_description_right {
+
+
+.text_left {
     flex: 1; /* permet de prendre toute la place pour que l'image soit toute à gauche*/
 }
 
