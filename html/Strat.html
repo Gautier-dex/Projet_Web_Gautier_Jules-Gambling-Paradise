@@ -18,8 +18,143 @@
             <a href="Rejoindre.html">Nous rejoindre</a>
         </nav>
     </header>
+
     <section class="header2_0">
-        <h1>Poker - Stratégies </h1>
+        <h1>Poker</h1>
+        <nav class="nav_poker">
+            <h1><a href="Strat.html">Stratégies</a></h1>
+            <a href="Review.html">Review de main</a>
+        </nav>
+    </section>
+
+    <section class="preflop_strat">
+        <h2>Maîtriser Le Préflop</h2>
+        <p>Le préflop est souvent sous-estimé, mais c'est la fondation absolue de votre jeu. C'est l'étape la plus importante et l'une des plus difficiles à maîtriser.</p>
+        <ol type="I">
+            <li>
+                <h3>La règle d'or: L'importance de la position</h3>
+                <p>Plus vous êtes proche du "Bouton" (le dernier à parler), plus vous pouvez jouer de mains (ouvrir large).</p>
+                <ul style="list-style-type: circle">
+                    <li>
+                        <p>Pourquoi ? Car vous avez plus de chances d'être "en position" (parler en dernier) après le flop. Cela vous donne un avantage d'information massif. De plus, moins il y a de joueurs à parler après vous, moins vous risquez de tomber sur une grosse main.</p>
+                    </li>
+                    <li>
+                        <p>La logique :</p>
+                        <ul style="list-style-type: square">
+                            <li>
+                                <p>Positions précoces (UTG, Lojack) = On joue serré (peu de mains, uniquement les très fortes).</p>
+                            </li>
+                            <li>
+                                <p>Positions tardives (Cutoff, Bouton) = On joue large (beaucoup plus de mains).</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="../images/position.png" alt="Position au poker">
+                <p>Source de l'image: <a href="https://fr.wikipedia.org/wiki/Position_(poker)#:~:text=Au%20poker%2C%20la%20position%20indique,joueur%20dans%20le%20sens%20horaire.">Wikipedia</a></p>
+            </li>
+
+            <li>
+                <h3>Les pourcentages d'ouvertures théoriques</h3>
+                <p>Pour avoir un ordre d'idée, voici la proportion de mains que vous devriez jouer (ouvrir) en fonction de votre position :</p>
+                <ul style="list-style-type: circle">
+                    <li>
+                        <p>UTG (Under The Gun) : ~17% des mains (très sélectif)</p>
+                    </li>
+                    <li>
+                        <p>Lojack : ~24%</p>
+                    </li>
+                    <li>
+                        <p>Hijack : ~29%</p>
+                    </li>
+                    <li>
+                        <p>Cutoff : ~37%</p>
+                    </li>
+                    <li>
+                        <p>Bouton : ~54% des mains (très agressif)</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Comment apprendre ses ranges</h3>
+                <p>Mémoriser toutes les mains jouables à chaque position peut paraître insurmontable. Voici les astuces pour s'y retrouver :</p>
+                <ul style="list-style-type: circle">
+                    <li>
+                        <p>Connaître les "Bottoms" (les limites basses) : Plutôt que d'apprendre toutes les mains, retenez la pire main jouable dans une catégorie. Par exemple, si vous savez qu'au Bouton, le "bottom" pour les As dépareillés (Offsuit) est A2o, vous savez que vous pouvez jouer tous les As dépareillés (A3o, A4o, etc.).</p>
+                    </li>
+                    <li>
+                        <p>Créer des repères visuels : Au Lojack, le bottom des As dépareillés est A10o. Vous savez donc que plus vous approchez du bouton, plus ce repère descend (A9o, A8o, etc.) jusqu'à A2o.</p>
+                    </li>
+                    <li>
+                        <p>La Régularité : La clé de la progression est de consulter des tableaux de ranges régulièrement (idéalement quelques minutes chaque jour ou chaque semaine) pour habituer votre œil et votre cerveau.</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Gérer l'adaption</h3>
+                <ul style="list-style-type: circle">
+                    <li>
+                        <p>Adapter ses "Bottoms" : Les "bottoms" théoriques sont faits pour des joueurs expérimentés. Si vous débutez, n'hésitez pas à resserrer légèrement vos limites (ex: jouer à partir de A8o au lieu de A2o) pour éviter les situations compliquées post-flop. Mais ne soyez pas trop serré non plus, sous peine de perdre la valeur de votre position !</p>
+                    </li>
+                    <li>
+                        <p>Faire attention aux absents : Soyez toujours vigilant à la table. S'il manque un joueur avant vous (par exemple l'UTG est absent), votre position réelle change. Vous gagnez une position et pouvez donc ouvrir votre jeu un peu plus largement (passer d'une stratégie Lojack à une stratégie Hijack, par exemple).</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <section class="flop_strat">
+        <h2>Maîtriser Le Flop</h2>
+        <p>Une fois les 3 premières cartes dévoilées, une nouvelle dynamique commence. L'arme principale à maîtriser à cette étape est le Continuation Bet (C-Bet) : le fait de miser au flop alors que vous étiez déjà l'agresseur (celui qui a relancé) avant le flop.</p>
+        <ol>
+            <li>
+                <h3>La texture du board</h3>
+                <p>La façon dont vous allez miser dépend directement des cartes qui tombent au flop :</p>
+                <ul style="list-style-type: circle">
+                    <li>
+                        <p>Le Board "Sec" (Dry) : Des cartes dépareillées et éloignées (ex: Roi-8-2 de couleurs différentes). Il y a très peu de tirages possibles.</p>
+                        <ul style="list-style-type: circle">
+                            <li><p>La Stratégie : Misez souvent, mais misez petit. (Environ 25% à 33% du pot). Vous avez souvent l'avantage et une petite mise suffit pour faire coucher les mains ratées de votre adversaire.</p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Le Board "Connecté" (Wet / Drawy) : Des cartes rapprochées ou de la même couleur (ex: Valet-9-7 avec deux Cœurs). Les tirages quintes ou couleurs sont très probables.</p>
+                        <ul style="list-style-type: circle">
+                            <li><p>La Stratégie : Misez moins souvent, mais misez plus cher. (Environ 50% à 75% du pot). Si vous avez une bonne main, vous devez la protéger et faire payer cher les adversaires qui cherchent leur tirage.</p></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Les deux avantages clés</h3>
+                <p>Avant de miser, posez-vous ces deux questions rapides :</p>
+                <ul style="list-style-type: circle">
+                    <li>
+                        <p>L'avantage de Range : Le flop favorise-t-il les grosses cartes que vous êtes censé avoir relancées préflop (As, Rois, Dames) ? Si oui, vous pouvez attaquer plus facilement.</p>
+                    </li>
+                    <li>
+                        <p>L'avantage de "Nuts" (Le jeu max) : Qui a le plus de chances d'avoir frappé un brelan ou une suite parfaite sur ce flop ? Si les cartes centrales correspondent mieux aux mains que votre adversaire a tendance à simplement "payer" préflop (comme les petites paires ou les connecteurs), soyez prudent.</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>La position dicte l'action</h3>
+                <ul style="list-style-type: circle">
+                    <li>
+                        <p>En Position (IP) : Vous parlez en dernier. Le C-Bet est votre meilleur ami. L'adversaire a "checké" vers vous, vous avez le contrôle absolu pour miser ou prendre une carte gratuite.</p>
+                    </li>
+                    <li>
+                        <p>Hors Position (OOP) : Vous parlez en premier. C'est beaucoup plus difficile. La règle d'or est de checker beaucoup plus souvent, même avec certaines bonnes mains, pour contrôler la taille du pot et éviter de vous faire relancer par un joueur qui a l'avantage de la position sur vous.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <i
     </section>
     </body>
 </html>
