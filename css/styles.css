@@ -97,11 +97,11 @@ footer nav a:hover {
     text-shadow: 0 0 10px rgba(211, 47, 47, 0.7);
 
 }
-    /*=============================================================
-    =============================================================
-    =============================================================
+/*=============================================================
+=============================================================
+=============================================================
 
-    accueil*/
+accueil*/
 
 .accueil_h1 {
     font-size: 100px;
@@ -221,19 +221,19 @@ th {
 
 
 .hit-blue {
-    background-color: #38b6ff; /* Hit */
+    background-color: #38b6ff;
     color: black;
 }
 .stay-red {
-    background-color: #ff5757; /* Stay */
+    background-color: #ff5757;
     color: black;
 }
 .double-yellow {
-    background-color: #ffbd59; /* Doubler */
+    background-color: #ffbd59;
     color: black;
 }
 .split-green {
-    background-color: #7ed957; /* Split */
+    background-color: #7ed957 ;
     color: black;
 }
 
@@ -475,7 +475,7 @@ Review de main*/
 }
 
 .table_gautier {
-    background-color: darkred;
+    background-color: darkred ;
     color: black;
 }
 
@@ -595,5 +595,3 @@ input:focus { /*focus est lorsque l'on clique sur le input, découvert grâce à
     font-weight: bold;
     font-family: arial, sans-serif;
 }
-
-
