@@ -305,10 +305,15 @@ general pour les 3 pages poker*/
     text-shadow: 1px 1px 0px rgba(0,0, 0, 0.4);
 }
 
-.header2_0 nav h1 a{
+.h2_poker a{
+    font-size: 60px;
+}
+
+.header2_0 nav h2 a{
     padding-bottom: 0px;
     padding-top:5px;
 }
+
 
 /*=============================================================
 =============================================================
