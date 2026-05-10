@@ -5,6 +5,15 @@
         <meta charset="UTF-8">
         <title>Poker - Stratégies</title>
         <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <script>
+            window.onload = function strat_aff() {
+                const isRegistered = localStorage.getItem('isRegistered') === 'true';
+                if (!isRegistered){
+                    window.location.href = 'Rejoindre.html';
+                    alert("Accès refusé. Vous devez vous inscrire pour voir nos contenus premium.");
+                }
+            }
+        </script>
     </head>
 
     <body class = "Strat">
