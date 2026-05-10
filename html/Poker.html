@@ -8,7 +8,7 @@
     </head>
 
 
-    <body>
+    <body class = "Poker">
 
     <header>
         <img src="../images/logo_gambling_paradise.png" alt="Logo Gambling Paradise"  style="width: 275px; height: auto;">
@@ -33,69 +33,74 @@
 
     <section class="rules_poker">
         <h2>Les Règles du Texas Hold'em</h2>
-        <h3>But du jeu</h3>
-        <p>Remporter les jetons misés au centre de la table (le pot) en formant la meilleure combinaison de 5 cartes, ou en misant de façon à faire se coucher tous les autres adversaires.</p>
-
-        <ol type="1">
-            <li>
-                <h3>Le déroulement d'une main</h3>
-                <p>Chaque main de Texas Hold'em se déroule en plusieurs étapes distinctes :</p>
-                <ul style="list-style-type: circle">
+        <div class="rules_st_poker">
+            <div class="rules_texte_poker">
+                <h3>But du jeu :</h3>
+                <p>Remporter les jetons misés au centre de la table (le pot) en formant la meilleure combinaison de 5 cartes, ou en misant de façon à faire se coucher tous les autres adversaires.</p>
+                <ol type="1">
                     <li>
-                        <p>Les Blindes (Mises obligatoires) : Avant la distribution, les deux joueurs à gauche du donneur (le bouton) doivent miser à l'aveugle. Le premier paie la Petite Blinde et le second la Grosse Blinde (qui vaut généralement le double).</p>
+                        <h3>Le déroulement d'une main</h3>
+                        <p>Chaque main de Texas Hold'em se déroule en plusieurs étapes distinctes :</p>
+                        <ul style="list-style-type: circle">
+                            <li>
+                                <p>Les Blindes (Mises obligatoires) : Avant la distribution, les deux joueurs à gauche du donneur (le bouton) doivent miser à l'aveugle. Le premier paie la Petite Blinde et le second la Grosse Blinde (qui vaut généralement le double).</p>
+                            </li>
+
+                            <li>
+                                <p>Le Pré-Flop : Chaque joueur reçoit 2 cartes privées face cachée. Le premier tour de mise a lieu, en commençant par le joueur à gauche de la Grosse Blinde.</p>
+                            </li>
+
+                            <li>
+                                <p>Le Flop : Le donneur place 3 cartes communes face visible au centre de la table. Deuxième tour de mise.</p>
+                            </li>
+
+                            <li>
+                                La Turn (Le Tournant) : Une 4ème carte commune est dévoilée. Troisième tour de mise.
+                            </li>
+
+                            <li>
+                                <p>La River (La Rivière) : Une 5ème et dernière carte commune est retournée. Quatrième et dernier tour de mise.</p>
+                            </li>
+
+                            <li>
+                                <p>L'Abattage (Showdown) : S'il reste au moins deux joueurs en jeu après le dernier tour de mise, ils dévoilent leurs cartes. Chaque joueur combine ses 2 cartes privées avec les 5 cartes communes pour former la meilleure main de 5 cartes. La meilleure main remporte le pot.</p>
+                            </li>
+                        </ul>
                     </li>
 
                     <li>
-                        <p>Le Pré-Flop : Chaque joueur reçoit 2 cartes privées face cachée. Le premier tour de mise a lieu, en commençant par le joueur à gauche de la Grosse Blinde.</p>
+                        <h3>Les actions de jeu</h3>
+                        <p>Lors d'un tour de mise, quand vient son tour, un joueur peut choisir parmi ces actions :</p>
+                        <ul style="list-style-type: circle">
+                            <li>
+                                <p>Se coucher (Fold) : Abandonner ses cartes et la main en cours (il ne peut plus gagner le pot).</p>
+                            </li>
+
+                            <li>
+                                <p>Checker (Check) : Ne rien miser et passer son tour au joueur suivant. (Possible uniquement si aucune mise n'a été faite avant lui lors de ce tour).</p>
+                            </li>
+
+                            <li>
+                                <p>Suivre (Call) : Égaler la mise effectuée par le ou les joueurs précédents pour rester dans la main.</p>
+                            </li>
+
+                            <li>
+                                <p>Relancer (Raise) : Augmenter le montant de la mise en cours. Les autres joueurs devront alors suivre, sur-relancer ou se coucher.</p>
+                            </li>
+                        </ul>
                     </li>
 
                     <li>
-                        <p>Le Flop : Le donneur place 3 cartes communes face visible au centre de la table. Deuxième tour de mise.</p>
+                        <h3>L'ordre des mains</h3>
+                        <p>Pour déterminer le gagnant à l'abattage, voici le classement officiel des combinaisons au poker (voir le tableau ci-contre) :</p>
                     </li>
-
-                    <li>
-                        La Turn (Le Tournant) : Une 4ème carte commune est dévoilée. Troisième tour de mise.
-                    </li>
-
-                    <li>
-                        <p>La River (La Rivière) : Une 5ème et dernière carte commune est retournée. Quatrième et dernier tour de mise.</p>
-                    </li>
-
-                    <li>
-                        <p>L'Abattage (Showdown) : S'il reste au moins deux joueurs en jeu après le dernier tour de mise, ils dévoilent leurs cartes. Chaque joueur combine ses 2 cartes privées avec les 5 cartes communes pour former la meilleure main de 5 cartes. La meilleure main remporte le pot.</p>
-                    </li>
-                </ul>
-            </li>
-
-            <li>
-                <h3>Les actions de jeu</h3>
-                <p>Lors d'un tour de mise, quand vient son tour, un joueur peut choisir parmi ces actions :</p>
-                <ul style="list-style-type: circle">
-                    <li>
-                        <p>Se coucher (Fold) : Abandonner ses cartes et la main en cours (il ne peut plus gagner le pot).</p>
-                    </li>
-
-                    <li>
-                        <p>Checker (Check) : Ne rien miser et passer son tour au joueur suivant. (Possible uniquement si aucune mise n'a été faite avant lui lors de ce tour).</p>
-                    </li>
-
-                    <li>
-                        <p>Suivre (Call) : Égaler la mise effectuée par le ou les joueurs précédents pour rester dans la main.</p>
-                    </li>
-
-                    <li>
-                        <p>Relancer (Raise) : Augmenter le montant de la mise en cours. Les autres joueurs devront alors suivre, sur-relancer ou se coucher.</p>
-                    </li>
-                </ul>
-            </li>
-
-            <li>
-                <h3>L'ordre des mains</h3>
-                <p>Pour déterminer le gagnant à l'abattage, voici le classement officiel des combinaisons au poker (voir le tableau ci-contre) :</p>
-            </li>
-        </ol>
-        <img src="../images/combinaisons.png" alt="Combinaisons de mains">
-        <p>Source de l'image: <a href="https://fr.wikipedia.org/wiki/Main_au_poker">Wikipedia</a></p>
+                </ol>
+            </div>
+            <div class="rules_img_poker">
+                <img src="../images/combinaisons.png" alt="Combinaisons de mains">
+                <p>Source de l'image: <a href="https://fr.wikipedia.org/wiki/Main_au_poker">Wikipedia</a></p>
+            </div>
+        </div>
     </section>
 
     <section class="formats_poker">
