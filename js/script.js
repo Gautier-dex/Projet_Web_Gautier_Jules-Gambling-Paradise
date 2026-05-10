@@ -10,6 +10,9 @@ function inscription (){
     localStorage.setItem('isRegistered', 'true');
     alert('Inscription réussie ! Vous avez maintenant accès au contenu premium.');
 }
+function blackjack_table() {
+
+    let table_bj_strat = document.getElementById('strat_table_not_visible');
 
 
 function uninscription (){
@@ -19,4 +22,15 @@ function uninscription (){
     }
     localStorage.setItem('isRegistered', 'false');
     alert("Désinscription réussie ! Vous n'avez maintenant plus accès au contenu premium.");
+}
+    if (table_bj_strat) {
+
+        if (localStorage.getItem('isRegistered') === 'true') {
+            table_bj_strat.style.filter = "none";
+            table_bj_strat.style.pointerEvents = "auto";
+        } else {
+            table_bj_strat.style.filter = "blur(8px)";
+            table_bj_strat.style.pointerEvents = "none";
+        }
+    }
 }

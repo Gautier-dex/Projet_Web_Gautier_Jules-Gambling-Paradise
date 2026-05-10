@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Blackjack</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../js/script.js"></script>
 </head>
 <body>
     <header>
@@ -76,6 +77,8 @@
         <p>En suivant notre stratégie parfaitement à la lettre, nous estimons que vous allez gagner environ 49,5 % de vos mains, contre 46 à 48 % si vous ne suivez pas ces conseils.</p>
         <p>Le tableau ci-dessous vous indique, pour chaque main que vous avez en fonction de la carte du croupier, ce que vous devez faire. Il est crucial pour vous de suivre ce tableau même si cela peut vous sembler tentant de tirer (hit) ou de doubler sur certaines mains qui ne sont pas indiquées sur le tableau.</p>
 
+
+        <div class="blur-content" id ="strat_table_not_visible" >
             <div class = "tables">
                 <table>
                     <thead>
@@ -493,34 +496,35 @@
                     </tfoot>
                 </table>
 
-            <aside class = "table_legend">
-                <table>
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Légendes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class = "hit-blue">
-                            <td class = "hit-blue">H</td>
-                            <td class = "hit-blue">Hit</td>
-                        </tr>
-                        <tr class = "stay-red">
-                            <td class = "stay-red">S</td>
-                            <td class = "stay-red">Stay</td>
-                        </tr>
-                        <tr class = "double-yellow">
-                            <td class = "double-yellow">D</td>
-                            <td class = "double-yellow">Double</td>
-                        </tr>
-                        <tr class = "split-green">
-                            <td class = "split-green">SP</td>
-                            <td class = "split-green">Split</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </aside>
+                <aside class = "table_legend">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Légendes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class = "hit-blue">
+                                <td class = "hit-blue">H</td>
+                                <td class = "hit-blue">Hit</td>
+                            </tr>
+                            <tr class = "stay-red">
+                                <td class = "stay-red">S</td>
+                                <td class = "stay-red">Stay</td>
+                            </tr>
+                            <tr class = "double-yellow">
+                                <td class = "double-yellow">D</td>
+                                <td class = "double-yellow">Double</td>
+                            </tr>
+                            <tr class = "split-green">
+                                <td class = "split-green">SP</td>
+                                <td class = "split-green">Split</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </aside>
+            </div>
         </div>
     </section>
 
