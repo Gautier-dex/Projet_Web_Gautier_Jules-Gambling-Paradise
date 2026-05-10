@@ -258,7 +258,11 @@ th {
     margin-left: 10%;
 }
 
-
+.blur-content {
+    filter: blur(8px);
+    pointer-events: none; /* permet que l'utilisateur ne puisse pas sélectionner le texter */
+    user-select: none;
+}
 
 
 /*=============================================================
