@@ -38,8 +38,7 @@ header nav a{
 header nav a:hover{
     background-color: lightgray;
     color: black;
-    text-shadow: 0 0 10px rgba(211, 47, 47, 0.7);
-
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 section h1 {
@@ -265,17 +264,47 @@ th {
 =============================================================
 =============================================================
 
-page poker*/
+general pour les 3 pages poker*/
 .header2_0{
     display: flex;
     align-items: center;
-    gap : 30%;
+    justify-content: space-between;
+    border-bottom: 2px solid #D4AF37;
+}
+.header2_0 h1{
+    border-bottom: none;
+    margin-bottom: 0px;
+    margin-top:0px;
 }
 
 .header2_0 nav{
+    font-size: 40px;
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
+    gap: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
+.header2_0 nav a{
+    color :white;
+    white-space: nowrap;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.header2_0 nav a:hover{
+    background-color: gray;
+    border-radius: 15px;
+    color: gold;
+    text-shadow: 1px 1px 0px rgba(0,0, 0, 0.4);
+}
+
+.header2_0 nav h1 a{
+    padding-bottom: 0px;
+    padding-top:5px;
+}
+
 
 
 
