@@ -18,22 +18,26 @@ header{
 
 header nav{
     display: flex;
-    gap: 50px;
+    gap: 40px;
     font-size:150%;
+    align-items: center;
 
 }
+header nav p{
+    font-size:150%;
+}
+
 header nav a{
-    color :red;
+    color :white;
     white-space: nowrap;
-    background-color: #D4AF37;
     border-radius: 15px;
-    border: 1px solid white;
     padding: 10px;
     text-decoration: none;
 }
 
 header nav a:hover{
-    color : white;
+    background-color: lightgray;
+    color: black;
     text-shadow: 0 0 10px rgba(211, 47, 47, 0.7);
 
 }
