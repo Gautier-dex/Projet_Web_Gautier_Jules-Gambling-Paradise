@@ -369,13 +369,6 @@ page strat*/
     height: 90%;
 }
 
-.ol_strat{
-    display: flex;
-    gap: 5px;
-    flex-direction: column;
-    padding:0;
-}
-
 .h3_strat{
     margin:0;
 }
