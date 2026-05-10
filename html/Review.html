@@ -5,15 +5,15 @@
         <meta charset="UTF-8">
         <title>Review de main</title>
         <link rel="stylesheet" type="text/css" href="../css/styles.css">
-        <script>
-            window.onload = function review_aff() {
-                const isRegistered = localStorage.getItem('isRegistered') === 'true';
-                if (!isRegistered){
-                    alert("Accès refusé. Vous devez vous inscrire pour voir nos contenus premium.");
-                    window.location.href = 'Rejoindre.html';
-                }
-            }
-        </script>
+<!--        <script>-->
+<!--            window.onload = function review_aff() {-->
+<!--                const isRegistered = localStorage.getItem('isRegistered') === 'true';-->
+<!--                if (!isRegistered){-->
+<!--                    alert("Accès refusé. Vous devez vous inscrire pour voir nos contenus premium.");-->
+<!--                    window.location.href = 'Rejoindre.html';-->
+<!--                }-->
+<!--            }-->
+<!--        </script>-->
     </head>
 
     <body class = "Review">
@@ -61,37 +61,49 @@
 
     <section class="flop_review">
         <h2>Flop</h2>
-        <p>Tombe au flop 6 de coeur, 4de trèfle et Roi de carreau.</p>
-        <p>On a donc un board très déconnecté, très sec. Il y a quand même un trèfle pour aller chercher un flush backdoor.</p>
-        <p>Mais le majeur problème est ce roi qui rend ma dame "inutile" car même si je touche une dame, je n'aurai pas top pair. MAis cela m'ouvre une quinte backdoor.</p>
-        <p>Mon adversaire décide de raise 6.8BB, il y a donc environ 13BB dans le pot. Il me faut donc environ 30% pour pouvoir call.</p>
-        <p>Entre la paire d'as à 12% et la quinte et flush backdoor, cela me donne environ 22% de chance de gagner.</p>
-        <p>Or comme mon adversaire est un joueur curieux, il se peut qu'il ait touché le 6 ou le 4</p>
-        <p>Je décide donc de call en ayant en tête que je veux le bluff, mais aussi rentabiliser ma main. C'est pourquoi je call et ne raise pas.</p>
+        <div class="flop_st_review">
+            <div class="flop_texte_review">
+            <p>Tombe au flop 6 de coeur, 4de trèfle et Roi de carreau.</p>
+            <p>On a donc un board très déconnecté, très sec. Il y a quand même un trèfle pour aller chercher un flush backdoor.</p>
+            <p>Mais le majeur problème est ce roi qui rend ma dame "inutile" car même si je touche une dame, je n'aurai pas top pair. MAis cela m'ouvre une quinte backdoor.</p>
+            <p>Mon adversaire décide de raise 6.8BB, il y a donc environ 13BB dans le pot. Il me faut donc environ 30% pour pouvoir call.</p>
+            <p>Entre la paire d'as à 12% et la quinte et flush backdoor, cela me donne environ 22% de chance de gagner.</p>
+            <p>Or comme mon adversaire est un joueur curieux, il se peut qu'il ait touché le 6 ou le 4</p>
+            <p>Je décide donc de call en ayant en tête que je veux le bluff, mais aussi rentabiliser ma main. C'est pourquoi je call et ne raise pas.</p>
+            </div>
         <img src="../images/flop_reviewer.png" alt="Flop">
+        </div>
     </section>
 
     <section class="turn_review">
         <h2>Turn</h2>
-        <p>Tombe à la turn une dame de coeur.</p>
-        <p>Je suis assez content, car je me protège des bluffs avec pair de 4 et pair de 6.</p>
-        <p>Mon adversaire relance 7.2BB.</p>
-        <p>Ce petit sizing me donne deux possibilités. Il a peur de cette dame et n'ose pas miser beaucoup, mais j'élimine cette option, car je considère mon adversaire comme un bon joueur au vu des précédentes mains.</p>
-        <p>Deuxième possibilité, il veut rentabiliser ce roi et donc mise petit pour que je call.</p>
-        <p>Je décide donc de call en ayant en tête que je veux le bluff sur la river. Je ne le bluff pas maintenant avec un raise car c'est un joueur curieux et risque de call pour aller voir la river.</p>
-        <img src="../images/turn_reviewer.png" alt="Turn">
+        <div class="turn_st_review">
+            <div class="turn_texte_review">
+                <p>Tombe à la turn une dame de coeur.</p>
+                <p>Je suis assez content, car je me protège des bluffs avec pair de 4 et pair de 6.</p>
+                <p>Mon adversaire relance 7.2BB.</p>
+                <p>Ce petit sizing me donne deux possibilités. Il a peur de cette dame et n'ose pas miser beaucoup, mais j'élimine cette option, car je considère mon adversaire comme un bon joueur au vu des précédentes mains.</p>
+                <p>Deuxième possibilité, il veut rentabiliser ce roi et donc mise petit pour que je call.</p>
+                <p>Je décide donc de call en ayant en tête que je veux le bluff sur la river. Je ne le bluff pas maintenant avec un raise car c'est un joueur curieux et risque de call pour aller voir la river.</p>
+            </div>
+            <img src="../images/turn_reviewer.png" alt="Turn">
+        </div>
     </section>
 
     <section class="river_review">
         <h2>River</h2>
-        <p>Tombe à la river un valet de coeur.</p>
-        <p>Je suis très content de cette carte, car je vais pouvoir continuer mon bluff avec cette ouverture flush, quinte et quinte royale.</p>
-        <p>Mon adversaire décide de miser encore très petit, 1/3pot, 12.2BB.</p>
-        <p>Je décide donc de semi-bluff en raisant double : 25BB.</p>
-        <p>Semi-bluff, car je gagne les paires de 4 et de 6, mais bluff la pair de roi avec ce tirage couleur et quinte.</p>
-        <p>Résultat : il fold et je récupère le pot à 71BB après mon raise 25BB. Me plaçant à la 18ème place du tournoi sur les 130 personnes restantes.</p>
-        <p>Je finirai à la 3ème place du tournoi.</p>
-        <img src="../images/river_reviewer.png" alt="River">
+        <div class="river_st_review">
+            <div class="river_texte_review">
+                <p>Tombe à la river un valet de coeur.</p>
+                <p>Je suis très content de cette carte, car je vais pouvoir continuer mon bluff avec cette ouverture flush, quinte et quinte royale.</p>
+                <p>Mon adversaire décide de miser encore très petit, 1/3pot, 12.2BB.</p>
+                <p>Je décide donc de semi-bluff en raisant double : 25BB.</p>
+                <p>Semi-bluff, car je gagne les paires de 4 et de 6, mais bluff la pair de roi avec ce tirage couleur et quinte.</p>
+                <p>Résultat : il fold et je récupère le pot à 71BB après mon raise 25BB. Me plaçant à la 18ème place du tournoi sur les 130 personnes restantes.</p>
+                <p>Je finirai à la 3ème place du tournoi.</p>
+            </div>
+            <img src="../images/river_reviewer.png" alt="River">
+        </div>
     </section>
 
     <footer>
