@@ -5,10 +5,18 @@
         <meta charset="UTF-8">
         <title>Review de main</title>
         <link rel="stylesheet" type="text/css" href="../css/styles.css">
-        <script type="text/javascript" src="../js/script.js"></script>
+        <script>
+            window.onload = function review_aff() {
+                const isRegistered = localStorage.getItem('isRegistered') === 'true';
+                if (!isRegistered){
+                    alert("Accès refusé. Vous devez vous inscrire pour voir nos contenus premium.");
+                    window.location.href = 'Rejoindre.html';
+                }
+            }
+        </script>
     </head>
 
-    <body>
+    <body class = "Review">
 
     <header>
         <img src="../images/logo_gambling_paradise.png" alt="Logo Gambling Paradise"  style="width: 275px; height: auto;">
@@ -41,10 +49,14 @@
 
     <section class="preflop_review">
         <h2>Preflop</h2>
-        <p>J'ai décidé d'ouvrir large en relançant 3BB car je sais que mon adversaire en big blind est un joueur "curieux" qui va limp ou call casiment tout en préflop.</p>
-        <p>Etant donné que j'ai une bonne main à ce moment-là, je cherche à la rentabiliser.</p>
-        <p>Les autres joueurs vont fold et Nino va call ma relance 3BB pour défendre sa big blind.</p>
+        <div class="preflop_st_review">
+            <div class="preflop_texte_review">
+                <p>J'ai décidé d'ouvrir large en relançant 3BB car je sais que mon adversaire en big blind est un joueur "curieux" qui va limp ou call casiment tout en préflop.</p>
+                <p>Etant donné que j'ai une bonne main à ce moment-là, je cherche à la rentabiliser.</p>
+                <p>Les autres joueurs vont fold et Nino va call ma relance 3BB pour défendre sa big blind.</p>
+            </div>
         <img src="../images/preflop_reviewer.png" alt="Preflop">
+        </div>
     </section>
 
     <section class="flop_review">
