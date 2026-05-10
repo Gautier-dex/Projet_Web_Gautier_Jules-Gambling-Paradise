@@ -441,7 +441,110 @@ Review de main*/
     padding-left:  10px;
 }
 
+/*=============================================================
+=============================================================
+=============================================================
+
+Nous rejoindre*/
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.p_in_form {
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 25px;
+    color: #cccccc;
+}
+
+form {
+    background-color: #1a1a1a;
+    color: #F0F8FF;
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid darkgoldenrod;
+    box-shadow: 0 0 10px rgba(205, 26, 26, 0.97);
+    width : 450px;
+}
+
+form h2 {
+    color: darkgoldenrod;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
 
+
+.input_pretty {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #0d0d0d;
+    color: white;
+    box-sizing: border-box; /* important pour que le padding ne dépasse pas, découvert grâce à l'IA*/
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus { /*focus est lorsque l'on clique sur le input, découvert grâce à l'IA*/
+    border-color: #D4AF37;
+    box-shadow: 0 0 10px rgba(228, 156, 10, 0.84);
+    outline: none; /* permet que le bord ne soit pas blanc mais notre couleur gold */
+}
+
+.button-signin {
+    width: 68%;
+    background-color: #D4AF37;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer; /*permet que le curseur passe en mode "cliquable" au survol du bouton, découvert grâce l'IA*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button-signin:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px #D4AF37;
+}
+
+.button-signout {
+    width: 27%;
+    background-color: #D4AF37;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer; /*permet que le curseur passe en mode "cliquable" au survol du bouton, découvert grâce l'IA*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.button-signout:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px #D4AF37;
+}
+
+.legend_signin {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+}
 
 
