@@ -11,7 +11,7 @@ body {
 
 header{
     display : flex;
-    gap: 460px;
+    gap: 350px;
     align-items: center;
 
 }
@@ -38,7 +38,7 @@ header nav a{
 header nav a:hover{
     background-color: lightgray;
     color: black;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 0px rgb(228, 156, 10);
 }
 
 section h1 {
@@ -67,6 +67,13 @@ p, ul {
     font-size: 20px;
 }
 
+.image_border {
+    border: 3px solid #2a3137;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(211, 47, 47, 0.7);
+}
+
+
 footer {
     border-top: 2px solid #D4AF37;
     padding-top: 20px;
@@ -94,17 +101,17 @@ footer nav a:hover {
     =============================================================
     =============================================================
 
-    Acceuil*/
+    accueil*/
 
-.acceuil_h1 {
+.accueil_h1 {
     font-size: 100px;
 }
 
-.acceuil_saut_de_ligne {
+.accueil_saut_de_ligne {
     margin-bottom: 20px;
 }
 
-.acceuil_text {
+.accueil_text {
     padding-right: 100px;
     padding-left: 100px;
     text-align: center;
@@ -166,12 +173,6 @@ page blackjack*/
     gap: 40px;
 }
 
-.image_left {
-    border: 3px solid #2a3137;
-    border-radius: 12px;
-}
-
-
 
 .text_left {
     flex: 1; /* permet de prendre toute la place pour que l'image soit toute à gauche*/
@@ -210,7 +211,7 @@ th {
 
 
 .rotated-text { /* pour la colonne verticale "votre main" */
-    writing-mode: vertical-rl;
+    writing-mode: vertical-rl; /* Aide de l'IA pour réussir à faire le texte verticale (decouverte ed writing mode) */
     transform: rotate(180deg);
     white-space: nowrap;
     background-color: #d8d8ca;
@@ -241,7 +242,7 @@ th {
     background-color: #d8d8ca;
     text-align: right;
     padding-right: 5px;
-    white-space: nowrap; /* Empêche le retour à la ligne */
+    white-space: nowrap; /* aide de l'IA pour réussir à ce que cela empêche le retour à la ligne */
 }
 
 .tables {
@@ -305,14 +306,39 @@ general pour les 3 pages poker*/
     padding-top:5px;
 }
 
+.h1_link {
+    text-decoration: none;
+}
 
 
 
+/*=============================================================
+=============================================================
+=============================================================
+
+À propos*/
 
 
+.table_jules {
+    background-color: darkgoldenrod;
+    color: black;
+}
 
+.table_gautier {
+    background-color: darkred;
+    color: black;
+}
 
+.accueil_thead_padding {
+    padding-right : 20px;
+    padding-left:  20px;
+}
 
+.accueil_thead_retour_a_la_ligne {
+    white-space: nowrap;
+    padding-right : 10px;
+    padding-left:  10px;
+}
 
 
 
