@@ -7,6 +7,10 @@ function inscription (){
         alert("Vous n'avez pas remplis tous les champs !");
         return;
     }
+    if(localStorage.getItem('isRegistered') === 'true'){
+        alert("Vous êtes déjà inscrit!");
+        return;
+    }
     localStorage.setItem('isRegistered', 'true');
     alert('Inscription réussie ! Vous avez maintenant accès au contenu premium.');
 }
