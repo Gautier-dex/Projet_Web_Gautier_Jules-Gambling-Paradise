@@ -31,26 +31,34 @@
         <h2>Les avantages</h2>
         <p>Rejoignez l'élite et transformez votre façon de jouer. En intégrant notre groupe privé, vous débloquez l'arsenal complet pour maximiser vos gains et maîtriser la variance. Vous aurez un accès immédiat à nos stratégies avancées de Texas Hold'em, pensées pour dominer les tables et vous donner un avantage clair sur vos adversaires. Vous ne serez plus jamais seul face à vos doutes : nos joueurs pros réaliseront des reviews de mains détaillées pour traquer vos erreurs et faire décoller votre winrate. Enfin, pour diversifier vos profits et jouer de manière mathématiquement parfaite face au casino, nous vous fournissons un accès exclusif à nos tableaux de Blackjack optimisés. Plus qu'une simple formation, c'est un raccourci direct vers la rentabilité.</p>
     </section>
+    <div class="form">
 
-    <form>
-        <fieldset>
-            <legend>Formulaire d'inscription</legend>
-            <input type="text" placeholder="Username" id="Username"> <br>
-            <input type="email" placeholder="Email" id="Email"> <br>
-            <input type="password" placeholder="Password" id="Password"><br>
-            <select id="Statut">
+        <form>
+            <h2>Rejoindre le Paradis</h2>
+            <p class ="p_in_form">Inscrivez-vous pour accéder aux stratégies exclusives.</p>
+
+            <label for="Username">Username</label>
+            <input type="text" placeholder="Nom d'utilisateur" id="Username" class ="input_pretty">
+
+            <label for="Email">Email</label>
+            <input type="email" placeholder="Email" id="Email" class ="input_pretty">
+
+            <label for="Password">Mot de passe</label>
+            <input type="password" placeholder="Mot de passe" id="Password" class ="input_pretty">
+
+            <label for="Statut">Type de joueur</label>
+            <select id="Statut" class ="input_pretty">
                 <option value="option1">Type de joueur</option>
                 <option value="option2">Récréatif(2h/semaine)</option>
                 <option value="option3">Investi (10h/semaine)</option>
                 <option value="option4">Objectif pro (2h/jour ou plus)</option>
-            </select><br>
-            <input type="button" value="Sign up" id="btn-inscription" onclick="inscription()">
-        </fieldset>
-    </form>
-    <fieldset>
-        <legend>Pour se désinscrire</legend>
-        <input type="button" value="Unsign" id="btn-uninscription" onclick="uninscription()">
-    </fieldset>
+            </select>
+
+            <input type="button" value="S'inscrire" id="btn-inscription" class="button-signin" onclick="inscription()">
+            <input type="button" value="Se désinscrire" id="btn-uninscription" class="button-signout" onclick="uninscription()">
+        </form>
+    </div>
+
     <footer>
         <nav>
             <a href="A-propos.html">À propos</a>
